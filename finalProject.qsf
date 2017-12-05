@@ -1,0 +1,130 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+# Date created = 10:56:14  November 28, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		finalProject_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY finalProject
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:56:14  NOVEMBER 28, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name BDF_FILE finalProject.bdf
+set_global_assignment -name BDF_FILE 4bitParallellRegister.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_G18 -to A0
+set_location_assignment PIN_F22 -to B0
+set_location_assignment PIN_E17 -to C0
+set_location_assignment PIN_L26 -to D0
+set_location_assignment PIN_L25 -to E0
+set_location_assignment PIN_J22 -to F0
+set_location_assignment PIN_H22 -to G0
+set_location_assignment PIN_Y2 -to Clock
+set_location_assignment PIN_M24 -to A1
+set_location_assignment PIN_Y22 -to B1
+set_location_assignment PIN_W21 -to C1
+set_location_assignment PIN_W22 -to D1
+set_location_assignment PIN_W25 -to E1
+set_location_assignment PIN_U23 -to F1
+set_location_assignment PIN_U24 -to G1
+set_location_assignment PIN_AA25 -to A2
+set_location_assignment PIN_AA26 -to B2
+set_location_assignment PIN_Y25 -to C2
+set_location_assignment PIN_W26 -to D2
+set_location_assignment PIN_Y26 -to E2
+set_location_assignment PIN_W27 -to F2
+set_location_assignment PIN_W28 -to G2
+set_location_assignment PIN_V21 -to A3
+set_location_assignment PIN_U21 -to B3
+set_location_assignment PIN_AB20 -to C3
+set_location_assignment PIN_AA21 -to D3
+set_location_assignment PIN_AD24 -to E3
+set_location_assignment PIN_AF23 -to F3
+set_location_assignment PIN_Y19 -to G3
+set_global_assignment -name BDF_FILE 2to1Mux.bdf
+set_global_assignment -name BDF_FILE counter.bdf
+set_global_assignment -name BDF_FILE output_files/display.bdf
+set_global_assignment -name BDF_FILE output_files/3bitRegister.bdf
+set_location_assignment PIN_AB19 -to A4
+set_location_assignment PIN_AA19 -to B4
+set_location_assignment PIN_AG21 -to C4
+set_location_assignment PIN_AH21 -to D4
+set_location_assignment PIN_AE19 -to E4
+set_location_assignment PIN_AF19 -to F4
+set_location_assignment PIN_AE18 -to G4
+set_location_assignment PIN_AD18 -to A5
+set_location_assignment PIN_AC18 -to B5
+set_location_assignment PIN_AB18 -to C5
+set_location_assignment PIN_AH19 -to D5
+set_location_assignment PIN_AA16 -to C6
+set_location_assignment PIN_AG19 -to E5
+set_location_assignment PIN_AF18 -to F5
+set_location_assignment PIN_AH18 -to G5
+set_location_assignment PIN_AA17 -to A6
+set_location_assignment PIN_AB16 -to B6
+set_location_assignment PIN_AB17 -to D6
+set_location_assignment PIN_AB15 -to E6
+set_location_assignment PIN_AA15 -to F6
+set_location_assignment PIN_AC17 -to G6
+set_location_assignment PIN_AD17 -to A7
+set_location_assignment PIN_AE17 -to B7
+set_location_assignment PIN_AG17 -to C7
+set_location_assignment PIN_AH17 -to D7
+set_location_assignment PIN_AF17 -to E7
+set_location_assignment PIN_AG18 -to F7
+set_location_assignment PIN_AA14 -to G7
+set_global_assignment -name BDF_FILE "output_files/2-to-4decoder.bdf"
+set_global_assignment -name BDF_FILE "output_files/2-bitCounter.bdf"
+set_global_assignment -name BDF_FILE output_files/upCounter.bdf
+set_global_assignment -name BDF_FILE output_files/output.bdf
+set_location_assignment PIN_R24 -to 4
+set_location_assignment PIN_N21 -to 3
+set_location_assignment PIN_M21 -to 2
+set_location_assignment PIN_M23 -to 1
+set_global_assignment -name BDF_FILE output_files/router.bdf
+set_location_assignment PIN_G21 -to equals
+set_location_assignment PIN_G19 -to not
+set_location_assignment PIN_AB28 -to switch
+set_location_assignment PIN_AC28 -to clear
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
